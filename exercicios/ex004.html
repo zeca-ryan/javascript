@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nome</title>
+    <style>
+        body{
+            background-color: lightgreen;
+            color: white;
+            text-align: center;
+            font-size: 40pt;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var nome = window.prompt('Qual é o seu nome?')
+        var divisao = Number(nome.length) / 2
+        document.writeln(`Olá ${nome}, Seu nome tem ${nome.length} letras`)
+        document.writeln(`Se dividirmos por 2 a quantidade de letras será ${divisao}`)
+        /*
+        n1.toFixed(2) // fixa em 2 casas decimais
+        n1.toFixed(2).replace('.', ',') // replace muda de . para ,
+        n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+         */
+    </script>
+</body>
+</html>

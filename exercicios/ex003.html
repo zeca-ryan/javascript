@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de JS</title>
+    <style>
+        body {
+            background-color: lightgreen;
+            color: white;
+            font: normal 20pt Arial;
+        }
+        h1{
+            color: pink;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ola Mundo</h1>
+    <p>Tamo safe </p>
+    <script>
+        var n1 = Number.parseFloat(window.prompt('Digite um número'))
+        var n2 = window.prompt('Digite um número')
+        var s = n1 + Number.parseFloat(n2)
+        window.alert('A soma dos números é ' + s)
+        // (number + number) + adição
+        // (string + string) + concatenação
+        /*
+        Number.parseInt(n) inteiro
+        Number.parseFloat(n) real
+        Number(n) o computador descobre sozinho
+
+        String(n)
+        n.toString()
+
+        var = s 'JavaScript'
+        'Estou aprendendo s' // não faz interpolação
+        'Estou aprendendo ' + s // usa concatenação
+        `Estou aprendendo ${s}` // usa template string
+
+        s.length // quantos caracteres a string tem 
+        s.toUppercase() // maiuscula
+        s.toLowercase() // minuscula
+        */
+    </script>
+</body> 
+</html>
