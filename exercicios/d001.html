@@ -19,14 +19,15 @@
     </div>
     <script>
         function falar() {
-            var txtp = window.document.querySelector('input#txtpais')
+            var txtpais = window.document.querySelector('input#txtpais')
             var res = window.document.querySelector('div#res')
-            res.innerHTML = `Seu pais de origem é ${txtp}`
-            if (txtp == `brasil`) {
+            var pais = txtpais
+            if (pais == `brasil`) {
                 res.innerHTML = `Brasileiro`
             } else {
                 res.innerHTML = `Estrangeiro`
             }
+            res.innerHTML = `Seu pais de origem é ${pais}`
         }
     </script>
 </body>

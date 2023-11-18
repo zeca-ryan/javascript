@@ -12,6 +12,7 @@
         header {
             color: white;
             text-align: center;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.50);
         }
         section {
             background-color: white;
@@ -21,27 +22,36 @@
             margin: auto;
             box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.50);
         }
+        div#msg{
+            margin-bottom: 12px;
+            
+        }
+        div#foto > img{
+            border-radius: 10px;
+            margin: auto;
+        }
         footer {
             color: white;
             text-align: center;
             font-style: italic;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.50);
         }
     </style>
 </head>
-<body>
+<body onload="carregar()">
     <header>
         <h1>Que horas são</h1>
     </header>
     <section>
-        <div>
-
+        <div id="msg">
+            <p>Mensagem</p>
         </div>
-        <div>
-
+        <div id="foto">
+            <img id='imagem' src="img/manha.jpg" alt="foto da manha">
         </div>
     </section>
     <footer>
-        <p>Zeca Productions</p>
+        <p>&copy; Zeca Productions</p>
     </footer>
     <script src="script.js"></script>
 </body>
